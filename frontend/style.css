@@ -1,0 +1,305 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #222;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.navbar h1 {
+    color: #2563eb;
+    font-size: 26px;
+}
+
+.navbar h1 span {
+    color: #111827;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 18px;
+    font-size: 14px;
+}
+
+.report-btn {
+    background-color: #2563eb;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #1e3a8a;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    max-width: 550px;
+    margin: auto;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.search-box button {
+    background-color: #2563eb;
+    color: white;
+}
+
+.hero-buttons {
+    margin-top: 25px;
+}
+
+.lost-btn {
+    background-color: #dc2626;
+    color: white;
+    margin-right: 10px;
+}
+
+.found-btn {
+    background-color: #16a34a;
+    color: white;
+}
+
+/* Items Section */
+.items-section {
+    padding: 50px 7%;
+}
+
+.items-section h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    text-align: center;
+    color: #666;
+    margin-bottom: 35px;
+}
+
+.items-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Item Cards */
+.item-card {
+    background-color: white;
+    width: 280px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.item-image {
+    height: 150px;
+    background-color: #eff6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.item-card h3 {
+    margin-bottom: 12px;
+}
+
+.item-card p {
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.lost-label {
+    display: inline-block;
+    color: #dc2626;
+    background-color: #fee2e2;
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin: 8px 0;
+}
+
+.found-label {
+    display: inline-block;
+    color: #15803d;
+    background-color: #dcfce7;
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin: 8px 0;
+}
+
+.view-btn {
+    display: block;
+    width: 100%;
+    background-color: #2563eb;
+    color: white;
+    margin-top: 12px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #1e293b;
+    color: white;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .items-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+/* Report Form */
+
+.report-section {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.report-section h2 {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+.report-section > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+#reportForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#reportForm label {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+#reportForm input,
+#reportForm select,
+#reportForm textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+#reportForm textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #2563eb;
+    color: white;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+.submit-btn:hover {
+    background-color: #1d4ed8;
+}
+
+@media (max-width: 600px) {
+    .report-section {
+        margin: 20px;
+        padding: 20px;
+    }
+}

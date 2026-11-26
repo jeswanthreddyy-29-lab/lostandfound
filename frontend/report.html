@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Item | CampusFind</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1>Campus<span>Find</span></h1>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="report.html">Report Item</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="report-section">
+
+        <h2>Report Lost or Found Item</h2>
+
+        <p>Fill in the details below to help reunite items with their owners.</p>
+
+        <form id="reportForm">
+
+            <label for="itemType">Report Type</label>
+            <select id="itemType" required>
+                <option value="">Select type</option>
+                <option value="Lost">Lost Item</option>
+                <option value="Found">Found Item</option>
+            </select>
+
+            <label for="itemName">Item Name</label>
+            <input type="text" id="itemName"
+                   placeholder="Example: Black backpack" required>
+
+            <label for="category">Category</label>
+            <select id="category" required>
+                <option value="">Select category</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Bags">Bags</option>
+                <option value="Documents">Documents</option>
+                <option value="Accessories">Accessories</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="description">Description</label>
+            <textarea id="description"
+                      placeholder="Describe the item..."
+                      required></textarea>
+
+            <label for="location">Location</label>
+            <input type="text" id="location"
+                   placeholder="Where was it lost or found?" required>
+
+            <label for="date">Date</label>
+            <input type="date" id="date" required>
+
+            <label for="image">Upload Image</label>
+            <input type="file" id="image" accept="image/*">
+
+            <button type="submit" class="submit-btn">
+                Submit Report
+            </button>
+
+        </form>
+
+    </section>
+
+    <script src="report.js"></script>
+
+</body>
+</html>
